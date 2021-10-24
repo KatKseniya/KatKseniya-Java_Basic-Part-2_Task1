@@ -7,10 +7,12 @@ public class Journal
 {
 	public Date arrivalDate;
 	public Date departureDate;
-	private List <Person> personList = new ArrayList<Person>();
-	Person men1 = new Person("Men1", 1);
-	personList.add(men1);
-
+	
+		public static void main(String[] args)
+	{
+	ArrayList <Person> personList = new ArrayList<Person>();
+	personList.add(new Person("Men1", 1));
+	}
 }
 
 class Person
