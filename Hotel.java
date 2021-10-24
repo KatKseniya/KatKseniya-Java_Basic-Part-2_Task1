@@ -66,6 +66,7 @@ class Order
 		ArrayList <Room> rooms = new ArrayList<Room>(new Hotel().addRoom(new Room(1, "Economy", 2, 50)));
 
 		ArrayList <Person> men = new ArrayList<Person>();
+		
 		men.add(new Person("Men1", 10, 1));
 	}
 }
