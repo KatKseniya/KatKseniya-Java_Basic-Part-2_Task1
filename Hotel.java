@@ -14,7 +14,6 @@ public class Hotel
 		ArrayList <Room> rooms = new ArrayList<Room>();
 		rooms.add(room);
 		return rooms;
-
 }
 }
 
@@ -42,22 +41,20 @@ class Room
 		this.numberOfBeds = numberOfBeds;
 		Price = price;
 	}
-
-
 }
 
 class Person
 {
 	private String name;
 	private int numberOfDays;
+	private int roomId;
 
-	public Person(String name, int numberOfDays)
+	public Person(String name, int numberOfDays, int roomId)
 	{
 		this.name = name;
 		this.numberOfDays = numberOfDays;
+		this.roomId = roomId;
 	}
-
-
 }
 
 class Order
@@ -69,9 +66,6 @@ class Order
 		ArrayList <Room> rooms = new ArrayList<Room>(new Hotel().addRoom(new Room(1, "Economy", 2, 50)));
 
 		ArrayList <Person> men = new ArrayList<Person>();
-		men.add(new Person("Men1", 10));
-
-		List <Order> order1 = new ArrayList<>();
-		Stream.of(men, rooms);
+		men.add(new Person("Men1", 10, 1));
 	}
 }
