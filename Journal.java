@@ -8,6 +8,8 @@ public class Journal
 	public Date arrivalDate;
 	public Date departureDate;
 	private List <Person> personList = new ArrayList<Person>();
+	Person men1 = new Person("Men1", 1);
+	personList.add(men1);
 
 }
 
