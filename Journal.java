@@ -7,7 +7,7 @@ public class Journal
 {
 	public Date arrivalDate;
 	public Date departureDate;
-	private List <Person> personLit = new ArrayList<Person>();
+	private List <Person> personList = new ArrayList<Person>();
 
 }
 
