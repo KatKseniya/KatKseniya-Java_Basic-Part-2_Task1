@@ -8,7 +8,7 @@ public class Journal
 	public Date arrivalDate;
 	public Date departureDate;
 	
-		public static void main(String[] args)
+	public static void main(String[] args)
 	{
 	ArrayList <Person> personList = new ArrayList<Person>();
 	personList.add(new Person("Men1", 1));
