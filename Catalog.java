@@ -22,7 +22,7 @@ public class Catalog
 
 
 class CreateDataBaseOfGoods { // class for creating a database of goods
-	eCommerce food = new eCommerce();
+	eCommerce goods = new eCommerce();
 	ArrayList <Catalog> menuDB = new ArrayList<Catalog>(new eCommerce().addItem(new Catalog(1, "T-Shot", 50, 42, true)));
 }
 
