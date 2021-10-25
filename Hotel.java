@@ -1,7 +1,6 @@
 package by.epam.Hotel;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Stream;
+
 
 public class Hotel
 {
@@ -57,16 +56,19 @@ class Person
 	}
 }
 
+class CreateDataBaseOfRooms { // class for creating a database of hotel rooms
+	Hotel barselo = new Hotel();
+	ArrayList <Room> rooms = new ArrayList<Room>(new Hotel().addRoom(new Room(1, "Economy", 2, 50)));
+}
+
 class Order
 {
-	public static void main(String[] args)
+	public static  ArrayList <Order> addRoom (Person men, Room room)
 	{
-		Hotel barselo = new Hotel();
 
-		ArrayList <Room> rooms = new ArrayList<Room>(new Hotel().addRoom(new Room(1, "Economy", 2, 50)));
+		// method for adding the appropriate room to the customer
 
-		ArrayList <Person> men = new ArrayList<Person>();
-		
-		men.add(new Person("Men1", 10, 1));
+		return addRoom(men, room);
+
 	}
 }
