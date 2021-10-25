@@ -22,41 +22,12 @@ public class Scheduler
 }
 
 class Week {
-	private static ArrayList <WeekDays> addDaysToWeek (WeekDays days) {
-		ArrayList<WeekDays> week = new ArrayList<WeekDays>();
-		week.add(days);
+	private static ArrayList <String> addDaysToWeek () {
+		ArrayList<String> week = new ArrayList<>();
+		week.add("Monday");
+		week.add("Tuesday");
 		return week;
 	}
-
-}
-
-class WeekDays
-{
-	private String monday;
-	private String tuesday;
-	private String wednesday;
-	private String thursday;
-	private String friday;
-	private String saturday;
-	private String sunday;
-
-	public WeekDays() {
-		super();
-	}
-
-	public WeekDays(String monday, String tuesday, String wednesday, String thursday, String friday, String saturday,
-			String sunday)
-	{
-		super();
-		this.monday = monday;
-		this.tuesday = tuesday;
-		this.wednesday = wednesday;
-		this.thursday = thursday;
-		this.friday = friday;
-		this.saturday = saturday;
-		this.sunday = sunday;
-	}
-
 }
 
 class Note {
