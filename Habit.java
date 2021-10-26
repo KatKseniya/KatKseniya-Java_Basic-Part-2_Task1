@@ -3,32 +3,35 @@ import java.util.ArrayList;
 
 public class Habit
 {
-	private String name;
-	private String coverType;
+	private String habirName;
+	private String description;
 
-
-	public static ArrayList <HabitTracker> listOfHabits (HabitTracker habit)
+	public Habit(String habirName, String description)
 	{
-		ArrayList <HabitTracker> listOfHabits = new ArrayList<HabitTracker>();
-		listOfHabits.add(habit);
-		return listOfHabits;
+		this.habirName = habirName;
+		this.description = description;
+	}
+}
+
+class Period {
+	private int day;
+
+	public Period(int day)
+	{
+		this.day = day;
 	}
 }
 
 class HabitTracker
 {
-	private String habitsPeriod;
-	private String habitName;
-	private String description;
-	private int day;
 	private boolean isDone;
+	private ArrayList <Habit> habit;
+	private Period day;
 
-	public HabitTracker(String habitsPeriod, String habitName, String description, int day, boolean isDone)
+	public HabitTracker(boolean isDone, ArrayList<Habit> habit, Period day)
 	{
-		this.habitsPeriod = habitsPeriod;
-		this.habitName = habitName;
-		this.description = description;
-		this.day = day;
 		this.isDone = isDone;
+		this.habit = habit;
+		this.day = day;
 	}
 }
