@@ -1,33 +1,18 @@
 package by.epam.deliveryOfReadyMeals;
+
 import java.util.ArrayList;
 
-public class Menu
+public class MenuOfMeels
 {
 	private int id;
 	private String item;
 	private int price;
 
-	public Menu(int id, String item, int price)
+	public MenuOfMeels(int id, String item, int price)
 	{
 		this.id = id;
 		this.item = item;
 		this.price = price;
-	}
-
-}
-
-class CreateDataBaseOfMenu { // class for creating a database of menu items
-	Shop food = new Shop();
-	ArrayList <Menu> menuDB = new ArrayList<Menu>(new Shop().addItem(new Menu(1, "Water", 10)));
-}
-
-class Shop {
-
-	public static ArrayList <Menu> addItem (Menu menu)
-	{
-		ArrayList <Menu> menuDB = new ArrayList<Menu>();
-		menuDB.add(menu);
-		return menuDB;
 	}
 }
 
@@ -49,11 +34,13 @@ class Person
 class Order
 {
 	private int count;
+	Person person;
+	ArrayList <MenuOfMeels> order;
 
-	public static  ArrayList <Order> addMenuItem (Person men, Menu item)
+	public Order(int count, Person person, ArrayList<MenuOfMeels> order)
 	{
-		// method for adding the appropriate menu items to the customer
-
-		return addMenuItem (men, item);
+		this.count = count;
+		this.person = person;
+		this.order = order;
 	}
 }
