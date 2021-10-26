@@ -1,35 +1,39 @@
 package by.epam.electronicVisitLog;
-import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 public class Journal
 {
+	private Person person;
+	private Person day;
 
-
-	public static void main(String[] args)
+	public Journal(Person person, Person day)
 	{
-		Calendar calendar = new GregorianCalendar(2021, 10 , 25);
-		ArrayList <Person> personList = new ArrayList<Person>();
-		Person men1 = new Person("Men1", 1, calendar.getTime(), null);
-		personList.add(men1);
+		this.person = person;
+		this.day = day;
 	}
-
 }
 
 class Person
 {
 	private String name;
 	private int id; // id of the pass
-	private Date arrivalDate;
-	private Date departureDate;
 
-	public Person(String name, int id, Date arrivalDate, Date departureDate)
+	public Person(String name, int id)
 	{
 		this.name = name;
 		this.id = id;
+	}
+}
+
+class Period
+{
+	private Date arrivalDate;
+	private Date departureDate;
+
+	public Period(Date arrivalDate, Date departureDate)
+	{
 		this.arrivalDate = arrivalDate;
 		this.departureDate = departureDate;
 	}
 }
+
