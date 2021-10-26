@@ -1,34 +1,28 @@
 package by.epam.Scheduler;
-
 import java.util.ArrayList;
 
 public class Scheduler
 {
-	private String owner;
-	private String month;
 
-	public Scheduler(String owner, String month)
+	private ArrayList <Week> dayOfWeek;
+	private Note note;
+
+	public Scheduler(ArrayList<Week> dayOfWeek, Note note)
 	{
-		this.owner = owner;
-		this.month = month;
-	}
-
-	private static ArrayList <Scheduler> addNotetoWeek (ArrayList <Week> week, Note note) {
-
-		// method for adding note to day
-
-		return addNotetoWeek(week, note);
+		this.dayOfWeek = dayOfWeek;
+		this.note = note;
 	}
 }
 
 class Week {
-	private static ArrayList <String> addDaysToWeek () {
-		ArrayList<String> week = new ArrayList<>();
-		week.add("Monday");
-		week.add("Tuesday");
-		return week;
+	private String dayOfWeek;
+
+	public Week(String dayOfWeek)
+	{
+		this.dayOfWeek = dayOfWeek;
 	}
 }
+
 
 class Note {
 	private String note;
