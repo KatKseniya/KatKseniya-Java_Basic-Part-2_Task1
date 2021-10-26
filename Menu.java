@@ -34,8 +34,8 @@ class Person
 class Order
 {
 	private int count;
-	Person person;
-	ArrayList <MenuOfMeels> order;
+	private Person person;
+	private ArrayList <MenuOfMeels> order;
 
 	public Order(int count, Person person, ArrayList<MenuOfMeels> order)
 	{
