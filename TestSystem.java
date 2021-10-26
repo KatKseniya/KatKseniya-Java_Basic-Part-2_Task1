@@ -2,15 +2,15 @@ package by.epam.TestSystem;
 
 public class TestSystem
 {
-	private boolean correctAnswere;
 	private Questions question;
 	private Answere answere;
+	private boolean correctAnswere;
 
-	public TestSystem(boolean correctAnswere, Questions question, Answere answere)
+	public TestSystem(Questions question, Answere answere, boolean correctAnswere)
 	{
-		this.correctAnswere = correctAnswere;
 		this.question = question;
 		this.answere = answere;
+		this.correctAnswere = correctAnswere;
 	}
 }
 
