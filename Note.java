@@ -7,11 +7,13 @@ class NoteBook
 {
 	private int id;
 	private String owner;
+	private ArrayList <Note> note;
 
-	public NoteBook(int id, String owner)
+	public NoteBook(int id, String owner, ArrayList<Note> note)
 	{
 		this.id = id;
 		this.owner = owner;
+		this.note = note;
 	}
 
 	public static ArrayList<Note> addNote (Note note)
